@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lyotex</title>
-        <link rel="stylesheet" href="suppli.css">
+        <link rel="stylesheet" href="/registration/Suppliments/suppli.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,14 +16,14 @@
         <nav class="navbar">
             <div class="navbar-container">
                 <div class="navbar-logo">
-                    <a href="/">
+                    <a href="/registration/Home/index.html">
                         <strong>Lyotex</strong>
                     </a>
                 </div>
                 <ul class="navbar-menu">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/registration/Home/index.html">Home</a></li>
                     <li><a href="#">Products</a></li>
-                    <li><a href="/about">About</a></li>                    
+                    <li><a href="/registration/about/index.html">About</a></li>                    
                     <li>
                         <button title="cart" id="cartBtn" class="cart-link" style="background: chocolate;
                         padding: 9px;
@@ -41,7 +41,7 @@
         </nav>    
         
     <!-- <div class="container"> -->
-        <h1>Medication</h1>
+        <h1>Suppliments</h1>
         <!-- <div class="products-grid"> -->
                 <style>
                     /* Basic styles for the modal */
@@ -138,35 +138,35 @@
 
                 
                     const productList = [
-                        {
+                    {
                             title: "Zingavita Multivitamin (120 Tablets) ",
                             descp: "POWER-PACKED NUTRITION WITH 100% RDA OF VITAMINS AND MINERALS",
                             price: "$30.00",
-                            image: "img1.jpg",
+                            image: "/registration/public/img1.jpg",
                         },
                         {
                             title: "Carbamide Forte Multivitamin for Men ",
                             descp: "POWER-PACKED NUTRITION WITH 100% RDA OF VITAMINS AND MINERALS",
                             price: "$30.00",
-                            image: "img2.jpg",
+                            image: "/registration/public/img2.jpg",
                         },
                         {
                             title: "Centrum Women, World's No.1 Multivitamin  ",
                             descp: "POWER-PACKED NUTRITION WITH 100% RDA OF VITAMINS AND MINERALS",
                             price: "$30.00",
-                            image: "img3.jpg",
+                            image: "/registration/public/img3.jpg",
                         },
                         {
                             title: "Revital H Multivitamin For Men (60 Capsules) ",
                             descp: "POWER-PACKED NUTRITION WITH 100% RDA OF VITAMINS AND MINERALS",
                             price: "$30.00",
-                            image: "img4.jpg",
+                            image: "/registration/public/img4.jpg",
                         },
                         {
                             title: "Geofit Multivitamin Tablets For Men - 30 Tablets ",
                             descp: "POWER-PACKED NUTRITION WITH 100% RDA OF VITAMINS AND MINERALS",
                             price: "$30.00",
-                            image: "img5.jpg",
+                            image: "/registration/public/img5.jpg",
                         }
                     ]
 
@@ -253,7 +253,7 @@
                     const cartString = JSON.stringify(cart);
                     const encodedCart = encodeURIComponent(cartString);
                     console.log(cart)
-                    window.location.href = `finish.html?cart=${encodedCart}`;
+                    window.location.href = `cart/index.html?cart=${encodedCart}`;
                     // window.location = "/finish.html"
 
                 })

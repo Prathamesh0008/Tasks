@@ -5,13 +5,20 @@
     font-family: "poppins", sans-serif;
     color: wheat;
 }
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
 
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background: url('/registration/Login/index.html') no-repeat;
     background-size: cover;
     background-position: center;
       position: relative;
@@ -38,7 +45,15 @@ backdrop-filter: blur(10px);
 
 }
 
-
+.wrapper h1{
+    .single-line {
+        /* white-space: nowrap;           Prevents line breaks */
+        overflow: hidden;              /* Optional: hides overflow */
+        text-overflow: ellipsis;       /* Optional: adds "..." when text overflows */
+        width: 200px;                  /* Example width for demonstration */
+    }
+    
+}
 
 .wrapper h1 {
             font-size: 26px;
@@ -72,24 +87,24 @@ backdrop-filter: blur(10px);
     transform: translateY(-50%);
     font-size: 20px;
 }
-/* .wrapper .remember-forget{
+.wrapper .remember-forget{
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 
-} */
+}
 .remember-forget label input{
     accent-color: white;
     margin-right: 3px;
 }
-/* .remember-forget a{
+.remember-forget a{
     color: white;
     text-decoration: none;
-} */
+}
 
 .remember-forget a:hover{
-    /* text-decoration: underline; */
+    text-decoration: underline;
 }
 .wrapper .btn {
     width: 100%;
@@ -104,14 +119,7 @@ backdrop-filter: blur(10px);
     color: black;
     font-weight: 600;
 }
-.login-link p{
-    margin-top: 15px;
-}
-.login-link p a:hover {
-    text-decoration: underline;
-}
-
-/* .wrapper .register-link{
+.wrapper .register-link{
     font-size: 14.5px;
     text-align: center;
     margin-top: 20px;
@@ -121,8 +129,8 @@ color: aliceblue;
 text-decoration: none;
 font-weight: 600;
 
-} */
-/* .register-link p a:hover {
-    /* text-decoration: underline; */
+}
+.register-link p a:hover {
+    text-decoration: underline;
 
-} */
+}

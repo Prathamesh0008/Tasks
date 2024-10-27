@@ -488,8 +488,7 @@ height: 90vh;
     height: 236px;
     /* border: 2px solid black; */
     background-color: white;
-    /* background-image: url(box2); */
-    /* box-shadow: 10px 10px 10px rgba(0,0,0,0.5); */
+   
     box-shadow: 0px 0px 40px rgb(157, 184, 199);
     border-radius: 14px;
 }
@@ -499,8 +498,7 @@ height: 90vh;
     height: 236px;
     /* border: 2px solid black; */
     background-color: white;
-    /* background-image: url(box3); */
-    /* box-shadow: 10px 10px 20px rgba(0,0,0,0.5); */
+  
     border-radius: 14px;
     box-shadow: 0px 0px 40px rgb(157, 184, 199);
 }
@@ -727,7 +725,7 @@ padding-bottom: 80vh;
 .grp p{
     font-size: 20px;
     font-weight: 700;
-    /* margin-right: 190px; */
+   
     padding-left: -300px
 }
 .grp span{
@@ -817,7 +815,7 @@ padding-bottom: 80vh;
     font-family: "Montserrat", Sans-serif;
     font-weight: 700;
     height: 35vh;
-    /* bottom: 200vh; */
+   
 
 }
 
@@ -900,7 +898,7 @@ padding-bottom: 80vh;
 .stands-tab{
     height: 900px;
     width: 100%;
-    /* background-color: rgb(232, 220, 220); */
+   
 }
 
 .stand-name {
@@ -910,7 +908,7 @@ padding-bottom: 80vh;
     font-weight: 600;
     font-size: 50px;
     height: 10px;
-    /* bottom: 20px; */
+    
 
 }
 .stand-photo {
@@ -922,7 +920,7 @@ padding-bottom: 80vh;
     column-gap: 44px;
     margin-top: -800px;
         margin-bottom:100vh;
-        /* padding-bottom: 100px; */
+   
 }
 .stand-f{
     height: 85vh;
@@ -948,7 +946,7 @@ padding-bottom: 80vh;
     height: 86vh;
     width: 75vh;
     margin-right: 10vh;
-    /* box-shadow: 0px 0px 40px rgba(0.5, 1, 10, 1); */
+    
     
 }
 .stand-f p {
@@ -1068,7 +1066,7 @@ padding-bottom: 80vh;
 .grp p{
     font-size: 20px;
     font-weight: 700;
-    /* margin-right: 190px; */
+    
     padding-left: -300px
 }
 .grp span{
@@ -1126,15 +1124,6 @@ padding-bottom: 80vh;
     background-color: #218838;
 }
 
-/* .footer{
-    height: 50vh;
-    width: 100%;
-    margin-top: 1vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: black;
-} */
 
 
 

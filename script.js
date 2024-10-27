@@ -22,55 +22,57 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => alert(data))
         .catch(error => console.error('Error adding to cart:', error));
     }
-    // document.getElementById('about-item').addEventListener('click', function () {
-//     window.location.href = '/about';
-document.getElementById('vitamins-link').addEventListener('click', function () {
-    window.location.href = '/vitamins';
-});
-document.getElementById('medic-link').addEventListener('click', function () {
-    window.location.href = '/medic';
-});
-document.getElementById('suppliments-link').addEventListener('click', function () {
-    window.location.href = '/suppliments';
-});
-const images = [
-    'banner2.jpg',
-    'banner3.jpg',
-    'banner4.jpg',
-    'banner5.jpg',
-    'banner6.jpg',
 
-];
-
-let currentIndex = 0; // Track the current image index
-
-function changeImage() {
-    currentIndex++; // Move to the next image
-    if (currentIndex >= images.length) {
-        currentIndex = 0; // Reset to the first image
-    }
-    document.getElementById('slideshow-image').src = images[currentIndex]; // Change the image source
-}
-
-// Change image every 3 seconds (3000 milliseconds)
-setInterval(changeImage, 3000);
-
-
-fetch(`/cart/${user_id}`)
-.then(response => {
-    if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return response.json();
-})
-.then(data => {
-    const cartItems = document.getElementById('cart-items');
-    data.forEach(item => {
-        const itemDiv = document.createElement('div');
-        itemDiv.innerHTML = `
-            <p>${item.product_name} - $${item.price} x ${item.quantity}</p>
-        `;
-        cartItems.appendChild(itemDiv);
+    // Navigation link event listeners
+    document.getElementById('vitamins-link').addEventListener('click', function () {
+        window.location.href = '/vitamins';
     });
-})
-.catch(error => console.error('Error fetching cart items:', error));
+    document.getElementById('medic-link').addEventListener('click', function () {
+        window.location.href = '/medic';
+    });
+    document.getElementById('suppliments-link').addEventListener('click', function () {
+        window.location.href = '/suppliments';
+    });
+
+    const images = [
+        'banner2.jpg',
+        'banner3.jpg',
+        'banner4.jpg',
+        'banner5.jpg',
+        'banner6.jpg',
+    ];
+
+    let currentIndex = 0; // Track the current image index
+
+    function changeImage() {
+        currentIndex++; // Move to the next image
+        if (currentIndex >= images.length) {
+            currentIndex = 0; // Reset to the first image
+        }
+        document.getElementById('slideshow-image').src = images[currentIndex]; // Change the image source
+    }
+
+    // Change image every 3 seconds (3000 milliseconds)
+    setInterval(changeImage, 3000);
+
+    const user_id = 1; // Make sure to define user_id for cart fetching
+
+    fetch(`/cart/${user_id}`)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        const cartItems = document.getElementById('cart-items');
+        data.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.innerHTML = `
+                <p>${item.product_name} - $${item.price} x ${item.quantity}</p>
+            `;
+            cartItems.appendChild(itemDiv);
+        });
+    })
+    .catch(error => console.error('Error fetching cart items:', error));
+});
